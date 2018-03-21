@@ -50,3 +50,4 @@ bron: https://nl.wikipedia.org/wiki/Conceptueel_datamodel
 ## Uitwisselingsgegevensmodel (UGM)
 In een Uitwisselingsgegevensmodel (UGM) worden de gegevens en relaties zoals deze in een Semantisch Informatiemodel (SIM) zijn beschreven geoptimaliseerd voor gegevensuitwisseling. Normaliter zal een gegeven in het UGM gelijk zijn aan hetzelfde gegeven in het bijbehorende SIM. Indien noodzakelijk kan een gegeven met relaties geoptimaliseerd worden voor uitwisseling, het zogenaamde "platslaan". De structuren zoals beschreven in het UGM vormen de basis voor de berichten zoals die beschreven staan in het Berichtstructuurmodel (BSM).
 
+

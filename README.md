@@ -1,1 +1,1 @@
-"# Architectuur en Standaarden" 
+# Architectuur en Standaarden

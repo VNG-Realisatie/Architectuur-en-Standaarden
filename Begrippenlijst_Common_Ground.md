@@ -10,7 +10,7 @@ bron: https://nl.wikipedia.org/wiki/Application_programming_interface
 Wanneer we spreken over "API's", als alternatief op of vervanging van StUF Soap "services", bedoelen we kleine, scherp gedefinieerde, voor een businessbehoefte doelmatige en voor consumers van de API/service eenvoudig te begrijpen en eenvoudig te implementeren services. Waar StUF services (en de StUF standaard) meer ontworpen zijn met het oog op hergebruik voor providers van services, worden API's ontworpen op eenvoud van gebruik.
 
 ## Bronsystemen
-Een Bronsysteem is het systeem waaruit een gegeven afkomstig is.
+Een Bronsysteem is het systeem waaruit een gegeven afkomstig is. Voor elk soort gegeven moet er voor een gemeente één bron zijn. Er zijn bronnen voor landelijke basisgegevens en voor gemeentelijke kerngegeven. Bronsystemen kunnen buitengemeentelijk zijn zoals basisregistraties, of binnengemeentelijk. Voor gegevens die binnengemeentelijk worden vastgelegd, maar ook tussen gemeenten beschikbaar moeten zijn, kunnen landelijke voorzieningen dienen als gedelegeerde bron voor de buitengemeentelijke gegevens.
 
 ## Entiteittype
 In een Semantisch Informatiemodel (SIM) worden gegevens en hun relaties beschreven. Groepen samenhangende gegevens met eigenschappen van een in de werkelijkheid bestaand object, noemen we een objecttype. Het gaat om de structuur en relaties, niet om concrete instances van het objecttype. Dus bijvoorbeeld om een "ingeschreven natuurlijk persoon", niet om de persoon "Jan de Vries" (elke overeenkomst van deze voorbeeldnaam met een werkelijk bestaand persoon berust op louter toeval).
@@ -35,6 +35,16 @@ bron: https://en.wikipedia.org/wiki/Web_resource
 Representational state transfer (REST) is een software-architectuur voor gedistribueerde mediasystemen zoals het wereldwijde web.
 
 bron: https://nl.wikipedia.org/wiki/Representational_state_transfer 
+
+REST beschrijft 6 beperkingen (constraints) op de architectuur van gegevensuitwisseling:
+* Uniform Interface
+* Stateless
+* Cacheable
+* Client-Server
+* Layered System
+* Code on Demand (optional)
+
+bron: http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
 
 ## RESTful API
 Een RESTful API is een application program interface (API) die gebruik maakt van de HTTP requests GET, PUT, POST and DELETE om data te verwerken.

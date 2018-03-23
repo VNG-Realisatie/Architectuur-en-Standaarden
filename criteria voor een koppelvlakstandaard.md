@@ -4,9 +4,9 @@ Voor het beoordelen van een standaard kunnen we kijken vanuit verschillende pers
 * Vanuit de doelstellingen voor het maken van koppelvlakstandaarden
 * Criteria voor een open standaard (Forum standaardisatie)
 * Eigenschappen van een goede standaard (SIG)
+* Niet functionele eisen aan een koppelvlakstandaard
 * Beheersmatige en bestuurlijke familiecriteria
 * Inhoudelijke familiecriteria
-* Niet functionele eisen aan een koppelvlakstandaard
 
 ## Doelstellingen van koppelvlakstandaardisatie
 * **Interoperabiliteit**: (door een eenduidig service contract); Interoperabiliteit maakt het mogelijk om op basis van een interfacedefinitie “standaard stekkers en stopcontacten” te maken die altijd passen. Hierdoor kunnen koppelingen worden hergebruikt, loont voorinvestering in koppelingen en is minder maatwerk nodig voor het bouwen van koppelingen. Compliancy met andere (internationale) standaarden speelt hierbij een belangrijke rol
@@ -65,7 +65,10 @@ In het StUF beheermodel wordt een aantal beheersmatige en bestuurlijke beoordeli
 * R07. Beschreven beheermodel op basis van StUF beheermodel
 * R08. Inzicht in (voorgenomen) implementaties
 
+De volgende criteria zouden hieraan toegevoegd moeten worden
 * Er moet ten minste één feitelijke en operationeel werkende implementatie zijn van het koppelvlak bij een gemeente.
+* Specificaties en documentatie worden beschikbaar gesteld op een manier die toegankelijk is voor de relevante gebruikers (developers) en belanghebbenden van de standaard. Dit moet toegang tot de en bijdragen aan de standaard zo goed mogelijk faciliteren.
+* Tijdens de ontwikkeling van (deze versie van) het koppelvlak is er voldoende ruimte geweest voor alle belanghebbenden om bij te dragen aan het koppelvlak. De bijdragen en opmerkingen van belanghebbenden zijn op de juiste manier afgewogen en meegenomen bij de ontwikkeling van de koppelvlakstandaard.
 
 ## Inhoudelijke beoordelingscriteria
 In het StUF beheermodel wordt een aantal inhoudelijke beoordelingscriteria genoemd, waar de (StUF) Expertgroep een (kandidaat) nieuwe koppelvlakstandaard op moet toetsen:
@@ -85,7 +88,7 @@ In het StUF beheermodel wordt een aantal inhoudelijke beoordelingscriteria genoe
 * Een structuurplaatje (**E05**) zal voor API's meestal niet relevant zijn. De Open API Specificatie dient zoveel mogelijk zelfverklarend en voldoende overzichtelijk te zijn. De documentatieverplichting op dit niveau geldt dus alleen wanneer de werking van de API niet voldoende gespecificeerd kan worden in de Open API Specificatie. Dit principe (zelfbeschrijvend specificeren is beter dan aanvullend documenteren) moet ook voor de technische definitie voor xml berichten (xsd's) gelden.
 * Gebruik van de termen "berichtcatalogus" (in **E05**, **E06** en **E10**) en "sectormodel" (in **E07** en E10) moeten worden vervangen door "koppelvlakstandaard"
 * Voor API's is hergebruik (**E08**) geen primair criterium. API's worden geoptimaliseerd voor eenvoud van implementatie door consumers (gebruikers) van de API, i.p.v. voor hergebruik door providers van de API.
-* Het voorkomen van conflicten (**E09**) moet iets anders worden geformuleerd. Het gaat om consistentie met semantische (referentie) informatiemodel(len), uitwisselingsgegevensmodel(len), uitwisseltechniek. Daarnaast wellicht ook controle op 
+* Het voorkomen van conflicten (**E09**) moet iets anders worden geformuleerd. Het gaat om consistentie met semantische (referentie) informatiemodel(len), uitwisselingsgegevensmodel(len). 
 * Eisen van relatie en transformatie (**E10**) gelden niet of op een andere manier dan voor StUF is bedoeld. Voor API's moeten er afspraken zijn over backward compatibility (i.c.m. semantic versioning) en het ondersteunen van huidige (binnen welke tijd) en voorgaande (hoeveel versies) versies.
 * Het uitwisselingsgegevensmodel (UGM)is koppelvlakoverstijgend en uitwisseltechniekoverstijgend. Het bewaken van het juiste gebruik van entiteittypen uit het UGM in koppelvlakberichten, via pas-toe-of-leg-uit, moet worden opgenomen als inhoudelijk beoordelingscriterium.
 * Alle elementen in een koppelvlakbericht moeten zijn gedefinieerd in een semantisch informatiemodel.
@@ -95,3 +98,19 @@ In het StUF beheermodel wordt een aantal inhoudelijke beoordelingscriteria genoe
 * Versienummering wordt gedaan conform [Semantic versioning](https://semver.org).
 * Voor operaties en berichtdefinities worden betekenisvolle namen gebruikt.
 * Naamgeving van operaties en elementen (incl. relaties) is consequent en consistent met afspraken hierover in de uitwisseltechniek en namen in het betreffende UGM.
+
+## Inhoudelijke beoordelingscriteria voor API koppelvlakstandaarden
+Geïnspireerd op de beoordelingscriteria uit het StUF beheermodel met aanpassingen ten behoeve van API koppelvlakstandaarden, komen we tot de volgende beoordelingscriteria voor een koppelvlakstandaard:
+* Duidelijkheid over de plek in de familiestructuur.
+* Duidelijkheid organisatorisch en functioneel werkingsgebied.
+* Contactgegevens beheerder van berichtcatalogus zijn bekend en gepubliceerd.
+* Voldoet aan de regels van de betreffende koppelvlakoverstijgende uitwisseltechniek, dan wel er is een duidelijke business behoefte die afwijken van de koppelvlakoverstijgende uitwisseltechniek noodzakelijk maakt.
+* Gegevens in berichten zijn opgenomen in dezelfde structuur als gedefinieerd in het koppelvlakoverstijgende uitwisselingsgegevensmodel (UGM), dan wel er is een duidelijke business behoefte die afwijken van het uitwisselingsgegevensmodel noodzakelijk maakt.
+* Naamgeving van operaties en elementen (incl. relaties) is consequent en consistent met afspraken hierover in de uitwisseltechniek en namen in het betreffende UGM.
+* Voor operaties en berichtdefinities zijn betekenisvolle namen gebruikt.
+* De (technische) specificatie is zoveel mogelijk zelfverklarend. Wanneer de technische specificatie niet voldoende duidelijk en specifiek is voor de gewenste werking van de service of API, is er aanvullende documentatie beschikbaar.
+* De standaard en onderdelen daarvan voldoen aan naamgeving- en versienummeringsconventies (semantic versioning) en andere eisen die aan een koppelvlakstandaard worden gesteld vanuit de koppelvlakoverstijgende uitwisseltechniek.
+* Voor elk in een bericht(interacties) gebruikte entiteittype, element of relatie is verwijzing naar de semantische definitie duidelijk aangegeven naar een/het semantische (referentie) informatiemodel(len).
+* Technische specificatie van de berichten (schema's) ondersteunt object georiënteerde implementatie, dan wel er is een duidelijke business behoefte die afwijken van object orientatie georiënteerde schema's noodzakelijk maakt.
+* Uit de technische specificatie van de berichten (schema's) kan voor de meest gangbare platforms zonder fouten code worden gegenereerd, die zonder ingrijpende aanpassingen kan worden gebruikt. Dit is als onderdeel van de koppelvlakontwikkeling aangetoond.
+* Voor elke service of API is een referentieimplementatie beschikbaar in de vorm van de programmacode (open source) en in de vorm van een werkend programma. Er is een referentieimplementatie beschikbaar voor zowel de consumer(s) van de services/API's als voor de provider(s) van de services/API's.

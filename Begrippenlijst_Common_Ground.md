@@ -48,7 +48,15 @@ Een Semantisch Informatiemodel (SIM) of conceptueel gegevensmodel definieert wel
 bron: https://nl.wikipedia.org/wiki/Conceptueel_datamodel
 
 ## UitwisselingsGegevensModel (UGM)
-In een Uitwisselingsgegevensmodel (UGM) worden de gegevens en relaties zoals deze in een Semantisch Informatiemodel (SIM) zijn beschreven geoptimaliseerd voor gegevensuitwisseling. Normaliter zal een gegeven in het UGM gelijk zijn aan hetzelfde gegeven in het bijbehorende SIM. Indien noodzakelijk kan een gegeven met relaties geoptimaliseerd worden voor uitwisseling, het zogenaamde "platslaan". De structuren zoals beschreven in het UGM vormen de basis voor de berichten zoals die beschreven staan in het Berichtstructuurmodel (BSM).
+In een Uitwisselingsgegevensmodel (UGM) worden de gegevens en relaties zoals deze in een Semantisch Informatiemodel (SIM) zijn beschreven geoptimaliseerd voor gegevensuitwisseling. Qua enkelvoudige gegevens (elementen) vinden onder andere de volgende optimalisaties plaats: 
+* namen met spaties worden geconverteerd naar camelCase, 
+* formaten worden formeel gespecificeerd door middel van "patterns".  
+
+Indien noodzakelijk kunnen qua samengestelde gegevens (entiteittypen) en relaties de volgende optimalisaties worden uitgevoerd:
+* samenvoegen van entiteittypen,
+* platslaan van relaties.
+
+De structuren zoals beschreven in het UGM vormen de basis voor de berichten zoals die beschreven staan in het Berichtstructuurmodel (BSM).
 
 ## BerichtStructuurModel (BSM)
 In een BerictStructuurModel worden berichten vormgegeven op basis van een UitwisselingsGegevensModel. Alle onderdelen uit een UGM kunnen worden hergebruitk in een BSM. In een BerichtStructuurmodel worden alleen die onderdelen van het UGM opgenoemn die daadwerkelijk worden gebruikt in het bericht. Dat betekent dat er vaak gebruik zal worden gemaakt van een deel van de attributen van een entiteit en ook mogelijk een deel van de relaties wordt gebruikt. Ook de enumeratiewaarden van een Enumeratie kunnen bepekrt worden (niet veranderd).

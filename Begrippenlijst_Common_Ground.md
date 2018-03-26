@@ -36,6 +36,10 @@ Representational state transfer (REST) is een software-architectuur voor gedistr
 
 bron: https://nl.wikipedia.org/wiki/Representational_state_transfer 
 
+Representational state transfer (REST) is een software architectuurstijl die bestaat uit een set afgestemde architecturele constraints die toegepast zijn op componenten, koppelingen en gegevens elementen, binnen een gedistribueerd hypermedia systeem. REST negeert details zoals de implementatie van componenten en protocol syntax en concentreert zich op de rol van componenten, de constraints op de interactie van die componenten met andere componenten en de interpretatie van de belangrijke data elementen.
+
+bron: https://api2cart.com/api-technology/rest-dummies-short-intro-representational-state-transfer/
+
 REST beschrijft 6 beperkingen (constraints) op de architectuur van gegevensuitwisseling:
 * Uniform Interface
 * Stateless
@@ -64,7 +68,9 @@ Een Uitwisselingsgegevensmodel bestaat uit entiteittypen, eigenschappen (element
 De structuren van entiteittypen zoals beschreven in het UGM vormen de basis voor de berichten zoals die beschreven staan in het Berichtstructuurmodel (BSM). We hanteren een pas-toe-of-leg-uit principe op het volgen van de UGM entiteittypestructuren in berichten voor services en API's. Daarbij mag in een bericht wel worden gedefinieerd dat slechts een deel (van de elementen en relaties) van een entiteittype in een bericht wordt opgenomen.
 
 ## BerichtStructuurModel (BSM)
-In een BerictStructuurModel worden berichten vormgegeven op basis van een UitwisselingsGegevensModel. Alle onderdelen uit een UGM kunnen worden hergebruitk in een BSM. In een BerichtStructuurmodel worden alleen die onderdelen van het UGM opgenomen die daadwerkelijk worden gebruikt in het bericht. Dat betekent dat er vaak gebruik zal worden gemaakt van een deel van de attributen van een entiteit en ook mogelijk een deel van de relaties wordt gebruikt. Ook de enumeratiewaarden van een Enumeratie kunnen bepekrt worden (niet veranderd).
+Een bericht in een koppelvlakstandaard wordt gemodelleerd in een Bericht Structuur Model (BSM). Het BSM is een UML klassediagram waarmee de structuur van een specifiek bericht wordt vastgelegd. Op basis van het BSM kunnen de technische specificaties van berichten (xsd's of open API specificatie) worden gegenereerd.
+
+In een BerichtStructuurModel worden berichten vormgegeven op basis van een UitwisselingsGegevensModel. Alle onderdelen uit een UGM kunnen worden hergebruitk in een BSM. In een BerichtStructuurmodel worden alleen die onderdelen van het UGM opgenomen die daadwerkelijk worden gebruikt in het bericht. Dat betekent dat er vaak gebruik zal worden gemaakt van een deel van de attributen van een entiteit en ook mogelijk een deel van de relaties wordt gebruikt. Ook de enumeratiewaarden van een Enumeratie kunnen bepekrt worden (niet veranderd).
 
 Een BSM beschrijft de berichtstructuren onafhankelijk van een eventueel te gebruiken formaat of uitwisselstandaard (StUF soap/xml of REST/JSON API). Voorbeelden zijn vraag- en antwoordbericht of een kennisgevingsbericht. Vanuit een BSM kan eenzelfde bericht in verschillende formaten gegenereerd worden.
 

@@ -73,11 +73,13 @@ Soms wil je met je eigen editor documenten (dat kan ook code of schema zijn) bew
 	cd Architectuur-en-Standaarden
 	git config --global user.name "username"
 	git config --global user.email voornaam.achternaam@vng.nl
-	git commit --amend --reset-author```
+  git remote add vngr https://github.com/VNG-Realisatie/Architectuur-en-Standaarden.git
+	git fetch vngr
+	git pull vngr master```
 
 2. Ik wil een document toevoegen
 	* Voor je iets gaat wijzigen of toevoegen zorg je dat je de meest actuele toestand van de repository locaal hebt:
-	`git pull`
+	`git pull vngr master`
 	* Maak een branch voor de wijziging (wanneer je niet kan of wil werken op een branch die je al eerder gemaakt hebt):
 	`git branch branchnaam`
 	(waar "branchnaam" moet worden vervangen door een naam van je branch)

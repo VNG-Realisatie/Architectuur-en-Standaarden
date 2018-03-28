@@ -87,7 +87,7 @@ Soms wil je met je eigen editor documenten (dat kan ook code of schema zijn) bew
 	* Maak het document in de tool of app van jouw keuze (Notepad, Eclipse, XmlSpy, Atom, …)
 	* Bekijk (optioneel) welke documenten gewijzigd zijn:
 	`git status`
-	* Voeg het document toe aan je staging:
+	* Voeg het document toe aan je staging:
 	`git add bestandnaam.ext`
 	(waar bestandnaam.ext moet worden vervangen door de naam (inc. extensie) van het bestand dat je hebt toegevoegd)
 	* Wanneer je meerdere documenten hebt toegevoegd of gewijzigd, kan je ze ook allemaal tegelijk toevoegen aan staging met:

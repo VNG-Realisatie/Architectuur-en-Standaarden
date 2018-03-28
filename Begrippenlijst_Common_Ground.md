@@ -62,12 +62,14 @@ bron: https://nl.wikipedia.org/wiki/Conceptueel_datamodel
 
 ## UitwisselingsGegevensModel (UGM)
 In een Uitwisselingsgegevensmodel (UGM) worden de gegevens en relaties zoals deze in een Semantisch Informatiemodel (SIM) zijn beschreven geoptimaliseerd voor gegevensuitwisseling. Normaliter zal een gegeven in het UGM gelijk zijn aan hetzelfde gegeven in het bijbehorende SIM. Qua enkelvoudige gegevens (elementen) vinden onder andere de volgende optimalisaties plaats: 
-+* namen met spaties worden geconverteerd naar camelCase, 
-+* formaten worden formeel gespecificeerd door middel van "patterns".  
-+
-+Indien noodzakelijk kunnen qua samengestelde gegevens (entiteittypen) en relaties de volgende optimalisaties worden uitgevoerd:
-+* samenvoegen van entiteittypen,
-+* platslaan van relaties.
+
+* namen met spaties worden geconverteerd naar camelCase, 
+* formaten worden formeel gespecificeerd door middel van "patterns".  
+
+Indien noodzakelijk kunnen qua samengestelde gegevens (entiteittypen) en relaties de volgende optimalisaties worden uitgevoerd:
+
+* samenvoegen van entiteittypen,
+* platslaan van relaties.
 
 Een Uitwisselingsgegevensmodel bestaat uit entiteittypen, eigenschappen (elementen) daarvan/daarin en relaties tussen entiteittypen. Het uitwisselingsgegevensmodel wordt gemodelleerd in [UML](https://nl.wikipedia.org/wiki/Unified_Modeling_Language).
 

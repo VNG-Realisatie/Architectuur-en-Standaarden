@@ -78,7 +78,7 @@ Soms wil je met je eigen editor documenten (dat kan ook code of schema zijn) bew
 2. Ik wil een document toevoegen
 	* Voor je iets gaat wijzigen of toevoegen zorg je dat je de meest actuele toestand van de repository locaal hebt:
 	`git pull`
-	* Maak een branch voor de wijziging:
+	* Maak een branch voor de wijziging (wanneer je niet kan of wil werken op een branch die je al eerder gemaakt hebt):
 	`git branch branchnaam`
 	(waar "branchnaam" moet worden vervangen door een naam van je branch)
 	* Zorg dat je wijzigingen betrekking hebben op deze branch:
@@ -98,5 +98,8 @@ Soms wil je met je eigen editor documenten (dat kan ook code of schema zijn) bew
 	* Om het document naar GitHub te sturen als push request doe je:
 	`git push -u origin branchnaam`
 	(waar "branchnaam" moet worden vervangen door de naam van de branch die je bij bullit 2 hebt gemaakt)
+	* Om een pull request te maken ga je naar GitHub.com, en daar naar je eigen account en daarin de betreffende repository. Bijvoorbeeld https://github.com/username/Architectuur-en-Standaarden
+	* Selecteer de branch die je hierboven (bij bullit 2) hebt gemaakt.
+	* Klik "New pull request". Vul een titel en omschrijving van de pull request die beschrijft wat je waarom hebt gewijzigd of toegevoegd.
 3. Ik wil een document wijzigen
 4. Ik wil een correctie doen op een bijdrage van iemand anders

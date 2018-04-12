@@ -169,8 +169,8 @@ type: integer
 minimum: {Minimum waarde (inclusief)}
 maximum: {Maximum waarde (inclusief)}
 ```
-__ISSUE__: Willen we format int32 of int64 opnemen? Moet (kan) dan worden afgeleid uit [n]?
-__ISSUE__: Is er in OAS een manier om maximale lengte [n] van string af te dwingen?
+__AANNAME__: We maken geen onderscheid in format int32 of int64.
+__AANNAME__: Maximale lengte [n] van integer hoeft (en kan?) niet te worden afgedwongen in schema
 
 ### N[n],[d]
 Minimum waarde (inclusief)
@@ -192,4 +192,4 @@ type: string
 type: string
 format: uri
 ```
-__ISSUE__: Hoe gaan we URI opnemen? Als zelf gedefinieerd format: uri? En/of met pattern?
+__AANNAME__: Verdere uitwerking (bijvoorbeeld pattern voor uri) is niet nodig

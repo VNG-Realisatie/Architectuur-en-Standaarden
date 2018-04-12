@@ -14,6 +14,7 @@
 > "versie" begint met "v" gevolgd door alleen het major versienummer (API-24)
 
 > "collectie" is een entiteittype (zelfstandig naamwoord) in meervoud (API-08)
+
 __ISSUE__: Hoe vertalen we entiteittype die in UGM in enkelvoud staan (t.b.v. StUF) naar meervoud (t.b.v. API's)?
 
 > uri-parameter "sleutel" moet voorkomen in parameters met "in: path"
@@ -90,8 +91,6 @@ Dus niet als een query parameter
 
 > Een JSON-response heeft geen omhullende envelop (API-32).
 
-  Er wordt dus geen element opgenomen voor het entiteittype (zoals in StUF wel gebruikelijk is).
-
 > Verschillende contentserialisaties kunnen worden ondersteund: JSON, GeoJSON, JSON+HAL, XML, enz.
 
 > In de JSON+HAL response content body is een element "\_links" opgenomen.
@@ -109,7 +108,11 @@ __ISSUE__: Kunnen we aangeven of er historie moet worden worden opgenomen? Kan d
 > GeoJSON is onderdeel van de embedded resource in de JSON response (API-39).
 
 ### Relaties
+Wordt opgenomen in \_embedded.
+Naast de properties van de relatie/gerelateerde wordt in het geval van JSON+HAL ook een \_links property opgenomen met daarin alleen property \_self (die weer de properties href en title bevat).
+
 __ISSUE__: Hoe gaan we om met relatie-entiteiten?
+
 __ISSUE__: Hoe gaan we ermee om als er geen relatie-entiteit is, maar wel historie op de relatie?
 
 ## Response content (400 reeks statuscodes)

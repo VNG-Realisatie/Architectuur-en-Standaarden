@@ -60,6 +60,7 @@ Bij de vertaling van properties van een object zijn op een aantal plekken aannam
 Elk element wordt opgenomen met minimaal type, description (uit notes) en example (als die er is).
 
 __ISSUE__: Sommige elementnamen bevatten punt, maar DSO gebruikt punt (expand, fields, sortering) voor properties in gegevensgroep, relatie, enz.
+
 __ISSUE__: Hoe komen we aan voorbeeldwaarden (example)? Is daar al tagged value voor in MIM? Zijn er al voorbeeldwaarden opgenomen in UGM (of doen we dat altijd pas op BSM niveau)?
 
 ### Enumeratiesoort
@@ -83,7 +84,7 @@ $ref: '#/components/schemas/{gegevensgroep-componentnaam}'
 ```
 
 ### Tabel-entiteit
-Element opnemen in \_embedded
+Opnemen als 'normale' property, met type afgeleid van sleutel van de tabel-entiteit.
 
 ### Interface: NEN3610ID
 ```
@@ -109,8 +110,9 @@ format: date
 ```
 type: string
 format: date
-nullable: true
 ```
+
+__VRAAG__: Hebben we al iets voor onvolledige datum in JSON (niet-StUF) berichten?
 
 ### JAAR
 ```
@@ -134,7 +136,6 @@ format: date-time
 ```
 type: string
 format: date-time
-nullable: true
 ```
 
 ### POSTCODE

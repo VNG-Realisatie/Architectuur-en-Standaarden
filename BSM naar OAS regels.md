@@ -3,12 +3,13 @@ Dit document beschrijft een aantal regels voor het vertalen van een bericht stru
 
 ## Subtypen
 Een entiteittype die een subtype is van een ander entiteittype wordt afgeleid met allOf:
-
+```
 allOf:
 	- $ref: '#/components/schemas/{supertype-componentnaam'
 	- type: object
 	  properties:
       {elementen van het subtype}
+```
 
 Bijvoorbeeld:
 ```

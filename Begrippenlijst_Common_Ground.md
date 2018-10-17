@@ -56,9 +56,18 @@ Een RESTful API is een application program interface (API) die gebruik maakt van
 bron: http://searchmicroservices.techtarget.com/definition/RESTful-API 
 
 ## Semantisch Informatie model (SIM)
-Een Semantisch Informatiemodel (SIM) of conceptueel gegevensmodel definieert welke gegevens in een informatiesysteem vastgelegd kunnen worden, hoe deze gegevens gestructureerd zijn en wat de verbanden zijn tussen die gegevens. Een Semantisch Informatiemodel ligt steeds aan de basis van een in de werkelijkheid gerealiseerde implementatie en is in feite het hoog-niveauontwerp van een (doorgaans relationele) databank. 
+Bij het uitwisselen van gegevens tussen systemen is het essentieel duidelijkheid te hebben over de
+betekenis van verstuurde deze gegevens. De semantische informatiemodellen (SIM) bevatten de
+definitie van gegevens en relaties tussen objecttypen.
 
-bron: https://nl.wikipedia.org/wiki/Conceptueel_datamodel
+Een informatiemodel heeft betrekking op een domein en specificeert de gegevens en structuur. Een
+informatiemodel modelleert de werkelijkheid, en is niet gericht op specifiek technisch gebruik (zoals database of gegevensuitwisseling).
+
+We kennen nu drie semantische referentieinformatiemodellen die door meerdere koppelvlakken
+gebruikt worden: RSGB, RGBZ en imZTC. Hiernaast worden er domein- of ketenspecifieke
+informatiemodellen gebruikt en ontwikkeld.
+
+Het SIM wordt gemodelleerd in [UML](https://nl.wikipedia.org/wiki/Unified_Modeling_Language).
 
 ## UitwisselingsGegevensModel (UGM)
 In een Uitwisselingsgegevensmodel (UGM) worden de gegevens en relaties zoals deze in een Semantisch Informatiemodel (SIM) zijn beschreven geoptimaliseerd voor gegevensuitwisseling. Normaliter zal een gegeven in het UGM gelijk zijn aan hetzelfde gegeven in het bijbehorende SIM. Qua enkelvoudige gegevens (elementen) vinden onder andere de volgende optimalisaties plaats: 
